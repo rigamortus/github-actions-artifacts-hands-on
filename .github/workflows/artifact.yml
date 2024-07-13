@@ -23,10 +23,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Download text file
-      uses: actions/download-artifact@v4
+      uses: actions/download-artifact@v2
       with:
         name: hello-artifact
-        path: ./artifact
+        path: ./artifacts
     - name: Display text file
       run: |
         cat ./artifacts/hello.txt
